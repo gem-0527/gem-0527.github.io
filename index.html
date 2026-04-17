@@ -2,93 +2,146 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>CPT208 小组项目作品集</title>
+    <title>CPT208 A3 Group5 - My Stories in Museums</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body { 
             font-family: "Microsoft YaHei", Arial, sans-serif;
-            max-width: 1000px; 
+            max-width: 1100px; 
             margin: 0 auto; 
             padding: 30px; 
-            line-height: 1.8;
+            line-height: 1.7;
+            background-color: #121212;
+            color: #e0e0e0;
         }
+
         h1, h2 { 
-            color: #2c3e50; 
-            border-bottom: 2px solid #eee; 
+            color: #ffffff; 
+            border-bottom: 2px solid #333; 
             padding-bottom: 10px; 
             margin-top: 30px; 
         }
-        .member-card, .persona-card { 
-            padding: 20px; 
-            margin: 15px 0; 
-            border-radius: 10px; 
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        .member-container {
+            display: flex;
+            gap: 14px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin: 20px 0;
         }
-        .member-card { background: #f8f9fa; } /* 成员卡片浅灰色背景 */
-        .persona-card { background: #e8f4f8; } /* 画像卡片浅蓝色背景 */
-        img { 
-            border-radius: 50%; /* 头像圆形 */
-            border: 3px solid #ddd; 
+
+        .member-card {
+            background: #1e1e1e;
+            width: 200px;
+            padding: 18px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+            transition: all 0.35s ease;
         }
-        p { margin: 8px 0; } /* 段落间距适中 */
+
+        .member-card h3 {
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .member-card p {
+            font-size: 12.5px;
+            line-height: 1.5;
+        }
+
+        .member-card img {
+            width: 68px;
+            border-radius: 50%;
+            border: 3px solid #444;
+            margin-bottom: 8px;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            background: #262626;
+        }
+
+        .persona-card, .reference-card {
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .persona-card {
+            background: #1a2329;
+            border-left: 4px solid #4cb9e7;
+        }
+
+        .reference-card {
+            background: #1a2924;
+            border-left: 4px solid #56d9b0;
+        }
+
     </style>
 </head>
+
 <body>
-    <!-- 页面大标题 -->
-    <h1>CPT208 A3 Group5</h1>
 
-    <!-- ============== 第一部分：4人小组成员介绍（作业核心要求） ============== -->
+    <h1>CPT208 A3 Group5 - My Stories in Museums</h1>
+
     <h2>Group Members</h2>
-    <!-- 成员1：自然景色-山川（固定ID=15） -->
-    <div class="member-card">
-        <img src="https://picsum.photos/id/15/200/200" alt="Tianyi.Chen头像" width="75"> 
-        <h3>Name：Bowen.Chen</h3> 
-        <p>ID：2363420</p> 
-        <p>Introduction：Responsible for building the GitHub page and overall layout, and organizing the core requirements of user personas in the course PPT.</p> 
-    </div>
-    <!-- 成员2：自然景色-湖泊（固定ID=13） -->
-    <div class="member-card">
-        <img src="https://picsum.photos/id/13/200/200" alt="Wanying.Du头像" width="75"> 
-        <h3>Name：Wanying.Du</h3> 
-        <p>ID：2362414</p> 
-        <p>Introduction：Responsible for writing 80% of core user personas, referencing PPT examples to outline users' core goals and pain points</p> 
-    </div>
-    <!-- 成员3：自然景色-森林（固定ID=29） -->
-    <div class="member-card">
-        <img src="https://picsum.photos/id/29/200/200" alt="Shu.Fan头像" width="75"> 
-        <h3>Name：Shu.Fan</h3> 
-        <p>ID：2363372</p> 
-        <p>Introduction：Responsible for writing profiles of the top 10% extreme users, and refining profile details based on the PPT's 10-80-10 rule</p> 
-    </div>
-    <!-- 成员4：自然景色-海边（固定ID=28） -->
-    <div class="member-card">
-        <img src="https://picsum.photos/id/28/200/200" alt="Feiyu.Zhu头像" width="75"> 
-        <h3>Name：Feiyu.Zhu</h3> 
-        <p>ID：2361553</p> 
-        <p>Introduction：Responsible for checking whether all content meets course requirements, organizing Padlet submission links, and completing the submission</p> 
+    <div class="member-container">
+        <div class="member-card">
+            <img src="https://picsum.photos/id/15/200/200">
+            <h3>Bowen.Chen</h3>
+            <p>ID：2363420</p>
+            <p>Responsible for building the GitHub page and overall layout.</p>
+        </div>
+
+        <div class="member-card">
+            <img src="https://picsum.photos/id/13/200/200">
+            <h3>Wanying.Du</h3>
+            <p>ID：2362414</p>
+            <p>Responsible for writing 80% core user personas.</p>
+        </div>
+
+        <div class="member-card">
+            <img src="https://picsum.photos/id/29/200/200">
+            <h3>Shu.Fan</h3>
+            <p>ID：2363372</p>
+            <p>Responsible for 10% extreme user profiles.</p>
+        </div>
+
+        <div class="member-card">
+            <img src="https://picsum.photos/id/28/200/200">
+            <h3>Feiyu.Zhu</h3>
+            <p>ID：2361553</p>
+            <p>Responsible for final check and submission.</p>
+        </div>
     </div>
 
-    <!-- ============== 第二部分：用户画像（10-80-10规则，作业核心要求） ============== -->
     <h2>User Persona (10-80-10 Rule)</h2>
     <div class="persona-card">
-        <h3>Core User (80%): Lily, 20, XJTLU Student</h3> 
-        <p>Core User (80%): Lily, 20, XJTLU Student</p> 
-        <p>Goals: Record her museum experience easily, take photos, and save personal stories.</p> 
-        <p>Frustrations: Notes are messy, cannot link stories to specific exhibits.</p> 
-        <p>Our Solution: One-click story creation, auto-link to exhibits, simple save & share.</p> 
+        <h3>Core User (80%): Lily, 20, XJTLU Student</h3>
+        <p>Goals: Record museum experience easily, take photos, save personal stories.</p>
+        <p>Frustrations: Notes are messy; cannot link stories to exhibits.</p>
+        <p>Solution: One-click story creation, auto-link to exhibits, simple save & share.</p>
     </div>
+
     <div class="persona-card">
-        <h3>Extreme User (10%): Mr. Wang, 45, Museum Enthusiast</h3> 
-        <p>Basic Info: Age 45 | Regular museum visitor | Loves creating detailed stories.</p> 
-        <p>Goals: Make high-quality stories, share with more people, build personal influence.</p> 
-        <p>Frustrations: No professional tool to edit, layout, and publish museum stories.</p> 
-        <p>Our Solution: Advanced editor, story publishing, public display page.</p> 
+        <h3>Extreme User (10%): Mr. Wang, 45, Museum Enthusiast</h3>
+        <p>Goals: Create high-quality stories and share with others.</p>
+        <p>Frustrations: Lack of professional tools for editing and publishing.</p>
+        <p>Solution: Advanced editor, story publishing, public display page.</p>
     </div>
-</body>
-</html>
-<!-- 新增：AI Usage Reference 部分 -->
+
     <h2>AI Usage Reference</h2>
     <div class="reference-card">
-        <p>[1] Doubao, 2026 version, accessed on 19/03/2026, available at https://www.doubao.com. Used for refining English text and generating code structure.</p>
+        <p>[1] Doubao 2026, accessed 19/03/2026, https://www.doubao.com. Used for text refinement and code structure.</p>
     </div>
+
 </body>
 </html>
