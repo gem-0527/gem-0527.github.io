@@ -79,6 +79,84 @@
             background: #1a2329;
             border-left: 4px solid #4cb9e7;
         }
+        
+        /* 用户头像区域（正方形） */
+        .persona-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 8px;
+            border: 3px solid #4cb9e7;
+            object-fit: cover;
+        }
+
+        /* 顶部布局：头像 + 信息 + 按钮 */
+        .persona-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .persona-info {
+            flex: 1;
+            margin-left: 16px;
+        }
+
+        .persona-info h3 {
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .persona-info p {
+            font-size: 14px;
+            color: #ccc;
+            margin: 2px 0;
+        }
+
+        /* 下拉菜单样式 */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .detail-btn {
+            padding: 8px 14px;
+            background-color: #4cb9e7;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #1e1e1e;
+            min-width: 180px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            z-index: 10;
+            margin-top: 6px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 10px 14px;
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #262626;
+            border-radius: 8px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
 
         .reference-card {
             background: #1a2924;
@@ -124,11 +202,33 @@
     </div>
 
     <h2>User Persona (10-80-10 Rule)</h2>
+    
+    <!-- 核心用户：新版布局（头像+信息+悬浮下拉菜单） -->
     <div class="persona-card">
-        <h3>Core User (80%): Lily, 20, XJTLU Student</h3>
-        <p>Goals: Record museum experience easily, take photos, save personal stories.</p>
-        <p>Frustrations: Notes are messy; cannot link stories to exhibits.</p>
-        <p>Solution: One-click story creation, auto-link to exhibits, simple save & share.</p>
+        <div class="persona-header">
+            <img class="persona-avatar" src="https://picsum.photos/id/40/200/200">
+            <div class="persona-info">
+                <h3>Ruqi Sun</h3>
+                <p>College Student</p>
+                <p>Southern University of Science and Technology</p>
+            </div>
+
+            <!-- 悬浮菜单按钮 -->
+            <div class="dropdown">
+                <button class="detail-btn">More Details</button>
+                <div class="dropdown-content">
+                    <a href="#">Information Sheet</a>
+                    <a href="#">Informed Consent Form</a>
+                    <a href="#">Q&A</a>
+                </div>
+            </div>
+        </div>
+
+        <p><strong>Background:</strong> A frequent museum visitor with rich overseas visiting experience. He focuses on in-depth cultural exploration and uses AI tools for learning.</p>
+        <p><strong>Daily Habits:</strong> Prefers professional human tour guides for deep visits; pre-learns exhibit knowledge; records photos and personal thoughts; organizes and shares content after visits.</p>
+        <p><strong>Preferences:</strong> Loves simple, lightweight, no-download tools; refuses AI-generated personal feelings; dislikes complex apps and other visitors’ shared stories.</p>
+        <p><strong>Pain Points:</strong> Official explanations are rigid and lack human touch; post-visit sorting is tiring; tools are over-complicated.</p>
+        <p><strong>Needs:</strong> AI only provides historical facts; one-click photo & feeling recording; auto-sort diary without rewriting user content.</p>
     </div>
 
     <div class="persona-card">
