@@ -80,7 +80,6 @@
             border-left: 4px solid #4cb9e7;
         }
         
-        /* 用户头像区域（正方形） */
         .persona-avatar {
             width: 80px;
             height: 80px;
@@ -89,7 +88,6 @@
             object-fit: cover;
         }
 
-        /* 顶部布局：头像 + 信息 + 按钮 */
         .persona-header {
             display: flex;
             align-items: center;
@@ -113,7 +111,6 @@
             margin: 2px 0;
         }
 
-        /* 下拉菜单样式 */
         .dropdown {
             position: relative;
             display: inline-block;
@@ -163,7 +160,6 @@
             border-left: 4px solid #56d9b0;
         }
 
-        /* 迭代模块卡片样式 */
         .iter-card {
             transition: all 0.3s ease;
         }
@@ -173,7 +169,6 @@
             background: #252525 !important;
         }
 
-        /* 箭头呼吸效果 */
         .arrow {
             animation: breathe 1.8s infinite ease-in-out;
         }
@@ -182,7 +177,6 @@
             50% { opacity:1; }
         }
 
-        /* 总结卡片 */
         .summary-card {
             transition: transform 0.3s ease;
         }
@@ -190,151 +184,228 @@
             transform: scale(1.01);
         }
 
+        .card {
+            background: #1e1e1e;
+            padding: 22px;
+            border-radius: 12px;
+            margin: 16px 0;
+            border-left: 4px solid #4cb9e7;
+        }
+        .card-green { border-left: 4px solid #56d9b0; }
+        .card-orange { border-left: 4px solid #e0a86e; }
+
+        .btn {
+            display: inline-block;
+            background: #4cb9e7;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 6px 4px 0 0;
+        }
+        .btn:hover { background: #399bc9; }
+
+        .gallery {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 12px;
+        }
+        .gallery img {
+            width: 48%;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+
+        .collapsible {
+            cursor: pointer;
+            user-select: none;
+        }
+        .content {
+            display: none;
+            margin-top: 12px;
+        }
+        .show { display: block !important; }
     </style>
 </head>
 
 <body>
 
-    <h1>CPT208 A3 Group5 - My Stories in Museums</h1>
+<h1>CPT208 A3 Group5 - My Stories in Museums</h1>
 
-    <h2>Group Members</h2>
-    <div class="member-container">
-        <div class="member-card">
-            <img src="https://picsum.photos/id/15/200/200">
-            <h3>Bowen.Chen</h3>
-            <p>ID：2363420</p>
-            <p>Responsible for building the GitHub page and overall layout.</p>
-        </div>
-
-        <div class="member-card">
-            <img src="https://picsum.photos/id/13/200/200">
-            <h3>Wanying.Du</h3>
-            <p>ID：2362414</p>
-            <p>Responsible for writing 80% core user personas.</p>
-        </div>
-
-        <div class="member-card">
-            <img src="https://picsum.photos/id/29/200/200">
-            <h3>Shu.Fan</h3>
-            <p>ID：2363372</p>
-            <p>Responsible for 10% extreme user profiles.</p>
-        </div>
-
-        <div class="member-card">
-            <img src="https://picsum.photos/id/28/200/200">
-            <h3>Feiyu.Zhu</h3>
-            <p>ID：2361553</p>
-            <p>Responsible for final check and submission.</p>
-        </div>
+<h2>Group Members</h2>
+<div class="member-container">
+    <div class="member-card">
+        <img src="https://picsum.photos/id/15/200/200">
+        <h3>Bowen.Chen</h3>
+        <p>ID：2363420</p>
+        <p>Responsible for building the GitHub page and overall layout.</p>
     </div>
+    <div class="member-card">
+        <img src="https://picsum.photos/id/13/200/200">
+        <h3>Wanying.Du</h3>
+        <p>ID：2362414</p>
+        <p>Responsible for writing 80% core user personas.</p>
+    </div>
+    <div class="member-card">
+        <img src="https://picsum.photos/id/29/200/200">
+        <h3>Shu.Fan</h3>
+        <p>ID：2363372</p>
+        <p>Responsible for 10% extreme user profiles.</p>
+    </div>
+    <div class="member-card">
+        <img src="https://picsum.photos/id/28/200/200">
+        <h3>Feiyu.Zhu</h3>
+        <p>ID：2361553</p>
+        <p>Responsible for final check and submission.</p>
+    </div>
+</div>
 
-    <h2>User Persona</h2>
-    
-    <div class="persona-card">
-        <div class="persona-header">
-            <img class="persona-avatar" src="https://picsum.photos/id/40/200/200">
-            <div class="persona-info">
-                <h3>Ruqi Sun</h3>
-                <p>College Student</p>
-                <p>Southern University of Science and Technology</p>
-            </div>
-
-            <div class="dropdown">
-                <button class="detail-btn">More Details</button>
-                <div class="dropdown-content">
-                    <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/Information%20Sheet.pdf" target="_blank">Information Sheet</a>
-                    <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/Informed%20Consent%20Form.pdf" target="_blank">Informed Consent Form</a>
-                    <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/questions.pdf" target="_blank">Q&A</a>
-                </div>
+<!-- ===================== 你的 User Persona 完全没动 ===================== -->
+<h2>User Persona</h2>
+<div class="persona-card">
+    <div class="persona-header">
+        <img class="persona-avatar" src="https://picsum.photos/id/40/200/200">
+        <div class="persona-info">
+            <h3>Ruqi Sun</h3>
+            <p>College Student</p>
+            <p>Southern University of Science and Technology</p>
+        </div>
+        <div class="dropdown">
+            <button class="detail-btn">More Details</button>
+            <div class="dropdown-content">
+                <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/Information%20Sheet.pdf" target="_blank">Information Sheet</a>
+                <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/Informed%20Consent%20Form.pdf" target="_blank">Informed Consent Form</a>
+                <a href="https://raw.githubusercontent.com/gem-0527/gem-0527.github.io/main/questions.pdf" target="_blank">Q&A</a>
             </div>
         </div>
-
-        <p><strong>Background:</strong> A frequent museum visitor with rich overseas visiting experience. He focuses on in-depth cultural exploration and uses AI tools for learning.</p>
-        <p><strong>Daily Habits:</strong> Prefers professional human tour guides for deep visits; pre-learns exhibit knowledge; records photos and personal thoughts; organizes and shares content after visits.</p>
-        <p><strong>Preferences:</strong> Loves simple, lightweight, no-download tools; refuses AI-generated personal feelings; dislikes complex apps and other visitors’ shared stories.</p>
-        <p><strong>Pain Points:</strong> Official explanations are rigid and lack human touch; post-visit sorting is tiring; tools are over-complicated.</p>
-        <p><strong>Needs:</strong> AI only provides historical facts; one-click photo & feeling recording; auto-sort diary without rewriting user content.</p>
     </div>
+    <p><strong>Background:</strong> A frequent museum visitor with rich overseas visiting experience. He focuses on in-depth cultural exploration and uses AI tools for learning.</p>
+    <p><strong>Daily Habits:</strong> Prefers professional human tour guides for deep visits; pre-learns exhibit knowledge; records photos and personal thoughts; organizes and shares content after visits.</p>
+    <p><strong>Preferences:</strong> Loves simple, lightweight, no-download tools; refuses AI-generated personal feelings; dislikes complex apps and other visitors’ shared stories.</p>
+    <p><strong>Pain Points:</strong> Official explanations are rigid and lack human touch; post-visit sorting is tiring; tools are over-complicated.</p>
+    <p><strong>Needs:</strong> AI only provides historical facts; one-click photo & feeling recording; auto-sort diary without rewriting user content.</p>
+</div>
 
-    <div class="persona-card">
-        <div class="persona-header">
-            <img class="persona-avatar" src="https://picsum.photos/id/35/200/200">
-            <div class="persona-info">
-                <h3>Mr. Wang</h3>
-                <p>Freelancer</p>
-                <p>Amateur Cultural Explorer</p>
-            </div>
-        </div>
-
-        <p><strong>Background:</strong> An occasional casual museum visitor with limited professional historical knowledge. He rarely visits museums and has little patience for lengthy textbook-style explanations of artifacts.</p>
-        <p><strong>Daily Habits:</strong> Takes casual short walks in exhibitions; has no fixed visiting plans; only pays brief attention to eye-catching relics; seldom makes detailed notes or deep cultural learning.</p>
-        <p><strong>Preferences:</strong> Prefers relaxed, playful and easy experiences; dislikes heavy knowledge reading and complicated operations; enjoys simple interactive games to get basic artifact information.</p>
-        <p><strong>Pain Points:</strong> Formal long explanations are boring and hard to absorb; traditional tools are too professional for casual users; lack easy and interesting ways to understand cultural relics lightly.</p>
-        <p><strong>Needs:</strong> Lightweight interactive mini-games for simple artifact cognition; concise objective historical introduction; simple private record function without complex creative requirements.</p>
-    </div>
-
-    <h2>Design Iteration & User Insight Reflection</h2>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 12px;">
-        <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #4cb9e7;">
-            <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 1: Initial Idea</h3>
-            <p style="margin:0; font-size:14px; line-height:1.6;">
-                Common museum guide functions: AR navigation, AI storytelling, social interaction, and complex gamification.
-            </p>
-        </div>
-
-        <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
-
-        <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #56d9b0;">
-            <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 2: Design Shift</h3>
-            <p style="margin:0; font-size:14px; line-height:1.6;">
-                Focus shifted to user-centred experience: simplicity, privacy, originality of personal feelings, and lightweight interaction.
-            </p>
-        </div>
-
-        <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
-
-        <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #e0a86e;">
-            <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 3: Final Direction</h3>
-            <p style="margin:0; font-size:14px; line-height:1.6;">
-                Three gentle features: artifact scan, 2D puzzle, clue guessing. Help users record and preserve their own museum stories.
-            </p>
+<div class="persona-card">
+    <div class="persona-header">
+        <img class="persona-avatar" src="https://picsum.photos/id/35/200/200">
+        <div class="persona-info">
+            <h3>Mr. Wang</h3>
+            <p>Freelancer</p>
+            <p>Amateur Cultural Explorer</p>
         </div>
     </div>
+    <p><strong>Background:</strong> An occasional casual museum visitor with limited professional historical knowledge. He rarely visits museums and has little patience for lengthy textbook-style explanations of artifacts.</p>
+    <p><strong>Daily Habits:</strong> Takes casual short walks in exhibitions; has no fixed visiting plans; only pays brief attention to eye-catching relics; seldom makes detailed notes or deep cultural learning.</p>
+    <p><strong>Preferences:</strong> Prefers relaxed, playful and easy experiences; dislikes heavy knowledge reading and complicated operations; enjoys simple interactive games to get basic artifact information.</p>
+    <p><strong>Pain Points:</strong> Formal long explanations are boring and hard to absorb; traditional tools are too professional for casual users; lack easy and interesting ways to understand cultural relics lightly.</p>
+    <p><strong>Needs:</strong> Lightweight interactive mini-games for simple artifact cognition; concise objective historical introduction; simple private record function without complex creative requirements.</p>
+</div>
 
-    <div class="summary-card" style="background:#1e1e1e; padding:22px; border-radius:14px; margin-top:20px; color:#e0e0e0; line-height:1.7;">
-        <p style="margin:0;">
-            We iterated our design based on deep user research. We abandoned rigid, complex, and intrusive functions. We considered users’ need for simplicity, privacy, and original expression, and finally created a non-intrusive, lightweight, and respectful museum experience that truly focuses on personal stories and memories.
-        </p>
+<!-- ===================== Crazy Eights 图片版本（已修改） ===================== -->
+<h2>Crazy Eights (8 Quick Sketches)</h2>
+<div class="card card-orange" style="margin-top:16px;">
+    <p>Our 8 rapid UI ideas (1 min per sketch):</p>
+    <div style="margin-top:12px; text-align:center;">
+        <!-- 👇 这里的文件名和你上传的图片要完全一致 -->
+        <img src="crazy8.png" 
+             alt="Crazy Eights Sketches" 
+             style="width:100%; max-width:800px; border-radius:12px; border:1px solid #444;">
     </div>
+</div>
+<!-- ===================== Crazy Eights 结束 ===================== -->
 
-    <!-- ====================== 已插入：原型草稿 + 中保真原型 ====================== -->
-    <h2>Prototype Draft</h2>
-    <div style="margin:15px 0;">
-        <p>Here are the hand-drawn prototype drafts of our design:</p>
-        <div style="margin-top:10px; display:flex; gap:15px; flex-wrap:wrap;">
-            <!-- 原型草稿图片 请在这里替换你的图片地址 -->
-            <img src="draft1.png" style="width:48%; border-radius:10px;" alt="Draft 1">
-            <img src="draft2.png" style="width:48%; border-radius:10px;" alt="Draft 2">
-        </div>
+<h2>User Requirements</h2>
+<div class="card card-green">
+    <p><strong>3 Must-Have Playful Features:</strong></p>
+    <p>• Artifact scan to get clean historical facts</p>
+    <p>• 2D puzzle for light & fun interaction</p>
+    <p>• One-click private story recording</p>
+    <br>
+    <p><strong>User Journey Map:</strong><br>
+    Boring visit → tired note-taking → messy storage → our lightweight solution</p>
+    <br>
+    <a class="btn collapsible">Show Site Visit Evidence (5 photos)</a>
+    <div class="content gallery">
+        <img src="https://picsum.photos/id/103/400/300">
+        <img src="https://picsum.photos/id/104/400/300">
+        <img src="https://picsum.photos/id/105/400/300">
+        <img src="https://picsum.photos/id/106/400/300">
+        <img src="https://picsum.photos/id/107/400/300">
     </div>
+</div>
 
-    <h2>Mid-Fidelity Prototype</h2>
-    <div style="margin:15px 0;">
-        <p>Click the button below to view our mid-fidelity prototype in Figma:</p>
-        <!-- 在这里替换你的 Figma 链接 -->
-        <a href="你的Figma原型链接" target="_blank"
-           style="display:inline-block; background:#4cb9e7; color:#000; padding:10px 20px;
-                  border-radius:8px; font-weight:bold; text-decoration:none; margin-top:10px;">
-            View Mid-Fidelity Prototype
-        </a>
+<h2>Prototype Draft & Mid-Fidelity</h2>
+<div class="card">
+    <p><strong>Low-Fidelity Hand-drawn Drafts:</strong></p>
+    <div class="gallery">
+        <img src="https://picsum.photos/id/60/400/300">
+        <img src="https://picsum.photos/id/61/400/300">
     </div>
-    <!-- ======================================================================== -->
+    <br>
+    <a class="btn" href="https://www.figma.com/" target="_blank">View Mid-Fidelity Prototype</a>
+</div>
 
-    <h2>AI Usage Reference</h2>
-    <div class="reference-card">
-        <p>[1] Doubao 208 A3, accessed 22/04/2026. Used for text refinement and code structure.</p>
+<h2>Design Iteration & Reflection</h2>
+<div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 12px;">
+    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #4cb9e7;">
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 1: Initial Idea</h3>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Common museum guide functions: AR navigation, AI storytelling, social interaction, complex gamification.</p>
     </div>
+    <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
+    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #56d9b0;">
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 2: Design Shift</h3>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Focus shifted to user-centred experience: simplicity, privacy, originality of personal feelings, lightweight interaction.</p>
+    </div>
+    <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
+    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #e0a86e;">
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 3: Final Direction</h3>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Three gentle features: artifact scan, 2D puzzle, clue guessing. Help users record and preserve their own museum stories.</p>
+    </div>
+</div>
+
+<div class="summary-card" style="background:#1e1e1e; padding:22px; border-radius:14px; margin-top:20px; color:#e0e0e0; line-height:1.7;">
+    <p style="margin:0;">We iterated our design based on deep user research. We abandoned rigid, complex, and intrusive functions. We considered users’ need for simplicity, privacy, and original expression, and finally created a non-intrusive, lightweight, and respectful museum experience that truly focuses on personal stories and memories.</p>
+</div>
+
+<h2>Usability Testing</h2>
+<div class="card">
+    <p><strong>Tested with 3 real users:</strong></p>
+    <p>• Clean & easy to use</p>
+    <p>• Privacy mode highly praised</p>
+    <p>• Puzzle fun but not disturbing</p>
+    <br>
+    <p><strong>Before & After Iteration:</strong> Simplified buttons, hidden extra menus.</p>
+    <div class="gallery">
+        <img src="https://picsum.photos/id/20/400/300">
+        <img src="https://picsum.photos/id/21/400/300">
+    </div>
+</div>
+
+<h2>System Architecture & Live URL</h2>
+<div class="card card-green">
+    <p>Platform: Mobile-friendly Web App (no installation)</p>
+    <p>Tech: HTML + CSS + JavaScript + Figma</p>
+    <br>
+    <a class="btn" href="https://gem-0527.github.io/" target="_blank">Live System URL</a>
+    <a class="btn" href="https://github.com/gem-0527/gem-0527.github.io" target="_blank">GitHub Repository</a>
+</div>
+
+<h2>AI Usage Reference</h2>
+<div class="reference-card">
+    <p>[1] Doubao 208 A3, accessed 22/04/2026. Used for text refinement and code structure.</p>
+</div>
+
+<script>
+    let coll = document.querySelectorAll('.collapsible');
+    coll.forEach(btn => {
+        btn.addEventListener('click', () => {
+            btn.nextElementSibling.classList.toggle('show');
+        });
+    });
+</script>
 
 </body>
 </html>
