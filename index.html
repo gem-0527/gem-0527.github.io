@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Stories in Museums</title>
     <style>
         * {
@@ -18,6 +19,10 @@
             line-height: 1.7;
             background-color: #121212;
             color: #e0e0e0;
+        }
+
+        img {
+            object-fit: cover;
         }
 
         h1, h2, h3 { 
@@ -240,7 +245,6 @@
         }
         .show { display: block !important; }
 
-        /* 表格样式 */
         .research-table {
             width: 100%;
             border-collapse: collapse;
@@ -261,7 +265,6 @@
             background-color: #1b1b1b;
         }
 
-        /* 架构表格 */
         .arch-table {
             width: 100%;
             border-collapse: collapse;
@@ -276,7 +279,6 @@
             text-align: center;
         }
 
-        /* 三张 User Journey Map 竖直排列 无缝 等宽 */
         .journey-container {
             display: flex;
             flex-direction: column;
@@ -299,7 +301,6 @@
 
 <h1>My Stories in Museums</h1>
 
-<!-- Project Overview -->
 <h2>Project Overview</h2>
 <div class="card">
     <p><strong>Project Background</strong></p>
@@ -313,7 +314,6 @@
     </p>
 </div>
 
-<!-- Motivation -->
 <h2>Motivation</h2>
 <div class="card card-green">
     <p>Our group selected topic A3 My Stories in Museums under the theme of Digital Heritage & Play. Traditional museum visits usually rely on rigid text descriptions and monotonous official explanations, which make it difficult for visitors, especially young students and casual tourists, to develop real interests in cultural relics. Meanwhile, most existing museum applications focus too much on information display instead of playful and light interactive experiences, and lack a private space for users to record personal thoughts and visiting stories.</p>
@@ -321,7 +321,6 @@
     <p>Therefore, we design a lightweight web-based interactive system that integrates jigsaw puzzles and situation puzzle games to lower the understanding barrier of cultural heritage. We also provide a one-click visiting story recording function to help users collect their own museum memories. This project follows a user-centered design approach, enhances public engagement with digital heritage, and creates an inclusive, relaxed and interesting visiting experience for diverse visitors.</p>
 </div>
 
-<!-- Research Summary -->
 <h2>Research Summary</h2>
 <h3>Academic Papers (4)</h3>
 <div class="card">
@@ -413,7 +412,6 @@
     </div>
 </div>
 
-<!-- User Research -->
 <h2>User Research</h2>
 <div class="card card-green">
     <p><strong>Research Method</strong></p>
@@ -467,7 +465,6 @@
     <p><strong>Needs:</strong> Concise cultural relic introduction, easy jigsaw gameplay and casual situation puzzle experience.</p>
 </div>
 
-<!-- User Journey Map 3张无缝竖排 -->
 <h2>User Journey Map</h2>
 <div class="card">
     <p>User journey of museum visiting, interactive gaming and personal recording.</p>
@@ -511,7 +508,6 @@
     </div>
 </div>
 
-<!-- ====================== 中保真 + 高保真 已全部替换 ====================== -->
 <h2>Prototype Design</h2>
 <div class="card">
     <p><strong>Mid-Fidelity Prototype</strong></p>
@@ -553,9 +549,14 @@
     <p style="margin:0;">We adjusted the design from complicated multi-function to lightweight core experience. Finally we focused on jigsaw puzzle and turtle soup reasoning game, matching museum cultural characteristics, providing users with a relaxed, interesting and non-intrusive visiting interactive experience.</p>
 </div>
 
-<!-- Usability Testing & SUS -->
 <h2>Usability Testing & SUS Evaluation</h2>
 <div class="card card-orange">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+        <div></div>
+        <a href="https://github.com/gem-0527/gem-0527.github.io/blob/c1f232834a01305e5a8b8770e0bd554dd4bca562/CPT208.Ethics.InformedConsentForm(1).pdf" 
+           class="btn" target="_blank" style="margin:0;">Ethics Document</a>
+    </div>
+
     <p><strong>Participants:</strong> 3 target museum users</p>
     <p><strong>Core Tasks</strong></p>
     <p>1. Browse and read museum relic introductions</p>
@@ -576,15 +577,8 @@
     <p>Average SUS score: <strong>71.7 / 100</strong></p>
     <p>Evaluation Level: <strong>Good Usability</strong></p>
     <p>The overall system has friendly usability and meets the needs of museum casual interaction.</p>
-    <br>
-    <p><strong>Before & After Optimisation Interface</strong></p>
-    <div class="gallery">
-        <img src="images/test-before.png" alt="Before Optimization">
-        <img src="images/test-after.png" alt="After Optimization">
-    </div>
 </div>
 
-<!-- Overall Reflection -->
 <h2>Overall Project Reflection</h2>
 <div class="card">
     <p>In this group coursework, we completed the whole HCI design process including user research, persona establishment, crazy 8 sketch, low/mid/high fidelity prototyping, design iteration and usability testing.</p>
@@ -594,7 +588,6 @@
     <p>Through team division and cooperation, we learnt user-centred design ideas and complete interface development workflow. The limitation is the number of usability test participants is small, and the game level richness can be further improved. We will optimise interactive logic and game content in future design.</p>
 </div>
 
-<!-- System Architecture -->
 <h2>System Architecture</h2>
 <div class="card card-green">
     <table class="arch-table">
