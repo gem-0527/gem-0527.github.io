@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>CPT208 A3 Group5 - My Stories in Museums</title>
+    <title>My Stories in Museums</title>
     <style>
         * {
             margin: 0;
@@ -11,7 +11,7 @@
         }
 
         body { 
-            font-family: "Microsoft YaHei", Arial, sans-serif;
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             max-width: 1100px; 
             margin: 0 auto; 
             padding: 30px; 
@@ -25,6 +25,12 @@
             border-bottom: 2px solid #333; 
             padding-bottom: 10px; 
             margin-top: 30px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 32px;
+            letter-spacing: 0.5px;
         }
 
         .member-container {
@@ -254,12 +260,28 @@
         .research-table tr:nth-child(even) {
             background-color: #1b1b1b;
         }
+
+        /* 架构表格 */
+        .arch-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .arch-table td {
+            border: 1px solid #444;
+            padding: 10px 14px;
+            background: #1e1e1e;
+            color: #e0e0e0;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-<h1>CPT208 A3 Group5 - My Stories in Museums</h1>
+<!-- 已修改大标题 -->
+<h1>My Stories in Museums</h1>
 
 <!-- Project Overview -->
 <h2>Project Overview</h2>
@@ -286,13 +308,13 @@
 <!-- ======================= Research Summary ======================= -->
 <h2>Research Summary</h2>
 
-<h3>Academic Papers</h3>
+<h3>Academic Papers (4)</h3>
 <div class="card">
     <table class="research-table">
         <tr>
             <th>Paper</th>
-            <th>Strengths</th>
-            <th>Weaknesses</th>
+            <th>Strengths (3)</th>
+            <th>Weaknesses (3)</th>
         </tr>
         <tr>
             <td>Interactive Digital Interpretation in Museums</td>
@@ -317,13 +339,13 @@
     </table>
 </div>
 
-<h3>Commercial Products</h3>
+<h3>Commercial Products (4)</h3>
 <div class="card">
     <table class="research-table">
         <tr>
             <th>Product</th>
-            <th>Strengths</th>
-            <th>Weaknesses</th>
+            <th>Strengths (3)</th>
+            <th>Weaknesses (3)</th>
         </tr>
         <tr>
             <td>Palace Museum Official Mini-Program</td>
@@ -461,13 +483,13 @@
     <p><strong>User Journey Description:</strong></p>
     <p>Boring museum visit → dull text reading → need interesting interaction → use puzzle & turtle soup game → record personal feelings.</p>
     <br>
-    <a class="btn collapsible">Show Site Visit Evidence (5 photos)</a>
-    <div class="content gallery">
-        <img src="https://picsum.photos/id/103/400/300">
-        <img src="https://picsum.photos/id/104/400/300">
-        <img src="https://picsum.photos/id/105/400/300">
-        <img src="https://picsum.photos/id/106/400/300">
-        <img src="https://picsum.photos/id/107/400/300">
+    <p><strong>Site Visit Evidence (5 photos)</strong></p>
+    <div class="gallery">
+        <img src="images/visit-1.png" alt="Site Visit Photo 1 (Placeholder)">
+        <img src="images/visit-2.png" alt="Site Visit Photo 2 (Placeholder)">
+        <img src="images/visit-3.png" alt="Site Visit Photo 3 (Placeholder)">
+        <img src="images/visit-4.png" alt="Site Visit Photo 4 (Placeholder)">
+        <img src="images/visit-5.png" alt="Site Visit Photo 5 (Placeholder)">
     </div>
 </div>
 
@@ -558,15 +580,42 @@
     <p>Through team division and cooperation, we learnt user-centred design ideas and complete interface development workflow. The limitation is the number of usability test participants is small, and the game level richness can be further improved. We will optimise interactive logic and game content in future design.</p>
 </div>
 
-<h2>System Architecture & Live URL</h2>
+<!-- ======================= 好看的表格版 System Architecture ======================= -->
+<h2>System Architecture</h2>
 <div class="card card-green">
-    <p>Platform: Mobile-friendly Web Application</p>
-    <p>Tech: HTML + CSS + JavaScript + Figma</p>
-    <p>Core Game: Jigsaw Puzzle & Turtle Soup Situation Puzzle</p>
-    <p>Portfolio & GitHub page built by Feiyu.Zhu</p>
-    <br>
-    <a class="btn" href="https://gem-0527.github.io/" target="_blank">Live System URL</a>
-    <a class="btn" href="https://github.com/gem-0527/gem-0527.github.io" target="_blank">GitHub Repository</a>
+    <table class="arch-table">
+        <tr>
+            <td>User</td>
+        </tr>
+        <tr>
+            <td>↓</td>
+        </tr>
+        <tr>
+            <td>Mobile Web Browser</td>
+        </tr>
+        <tr>
+            <td>↓</td>
+        </tr>
+        <tr>
+            <td>Web Application (HTML + CSS + JavaScript)</td>
+        </tr>
+        <tr>
+            <td>↓</td>
+        </tr>
+        <tr>
+            <td>Exhibit Browsing • Jigsaw Puzzle • Turtle Soup • Personal Story Record</td>
+        </tr>
+        <tr>
+            <td>↓</td>
+        </tr>
+        <tr>
+            <td>Local Data Storage</td>
+        </tr>
+    </table>
+
+    <p style="margin-top:16px;"><strong>Platform:</strong> Mobile-friendly Web Application</p>
+    <p><strong>Tech:</strong> HTML + CSS + JavaScript + Figma</p>
+    <p><strong>Core Game:</strong> Jigsaw Puzzle & Turtle Soup Situation Puzzle</p>
 </div>
 
 <h2>AI Usage Reference</h2>
