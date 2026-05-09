@@ -20,7 +20,7 @@
             color: #e0e0e0;
         }
 
-        h1, h2 { 
+        h1, h2, h3 { 
             color: #ffffff; 
             border-bottom: 2px solid #333; 
             padding-bottom: 10px; 
@@ -48,6 +48,9 @@
         .member-card h3 {
             font-size: 15px;
             margin-bottom: 4px;
+            border: none;
+            padding: 0;
+            margin-top: 0;
         }
 
         .member-card p {
@@ -103,6 +106,9 @@
         .persona-info h3 {
             font-size: 18px;
             margin-bottom: 4px;
+            border: none;
+            padding: 0;
+            margin-top: 0;
         }
 
         .persona-info p {
@@ -227,6 +233,27 @@
             margin-top: 12px;
         }
         .show { display: block !important; }
+
+        /* 表格样式 */
+        .research-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+            font-size: 14px;
+        }
+        .research-table th, .research-table td {
+            border: 1px solid #444;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .research-table th {
+            background-color: #252525;
+            color: #fff;
+        }
+        .research-table tr:nth-child(even) {
+            background-color: #1b1b1b;
+        }
     </style>
 </head>
 
@@ -246,6 +273,79 @@
     <p><strong>Core Function</strong></p>
     <p>Provide museum artifact information browsing, <strong>jigsaw puzzle game</strong> and <strong>situation puzzle (turtle soup) game</strong>, together with personal visiting story recording, to enrich the museum visiting experience.
     </p>
+</div>
+
+<!-- ======================= Motivation ======================= -->
+<h2>Motivation</h2>
+<div class="card card-green">
+    <p>Our group selected topic A3 My Stories in Museums under the theme of Digital Heritage & Play. Traditional museum visits usually rely on rigid text descriptions and monotonous official explanations, which make it difficult for visitors, especially young students and casual tourists, to develop real interests in cultural relics. Meanwhile, most existing museum applications focus too much on information display instead of playful and light interactive experiences, and lack a private space for users to record personal thoughts and visiting stories.</p>
+    <br>
+    <p>Therefore, we design a lightweight web-based interactive system that integrates jigsaw puzzles and situation puzzle games to lower the understanding barrier of cultural heritage. We also provide a one-click visiting story recording function to help users collect their own museum memories. This project follows a user-centered design approach, enhances public engagement with digital heritage, and creates an inclusive, relaxed and interesting visiting experience for diverse visitors.</p>
+</div>
+
+<!-- ======================= Research Summary ======================= -->
+<h2>Research Summary</h2>
+
+<h3>Academic Papers</h3>
+<div class="card">
+    <table class="research-table">
+        <tr>
+            <th>Paper</th>
+            <th>Strengths</th>
+            <th>Weaknesses</th>
+        </tr>
+        <tr>
+            <td>Interactive Digital Interpretation in Museums</td>
+            <td>1. Complete digital interaction theory<br>2. Improve visitor engagement<br>3. Mature user-centered model</td>
+            <td>1. Lack lightweight game design<br>2. Ignore casual visitors<br>3. Few web-based examples</td>
+        </tr>
+        <tr>
+            <td>Gamification in Cultural Heritage Education</td>
+            <td>1. Prove gamification effectiveness<br>2. Rich puzzle & task cases<br>3. Focus on accessibility</td>
+            <td>1. No story recording function<br>2. Over-emphasize education<br>3. Lack usability testing</td>
+        </tr>
+        <tr>
+            <td>Mobile Applications for Museum Visitors</td>
+            <td>1. Complete guide function analysis<br>2. Good on-site behavior research<br>3. Clear UI principles</td>
+            <td>1. Too informative, not playful<br>2. Lack personalized content<br>3. Rare web app discussion</td>
+        </tr>
+        <tr>
+            <td>User Experience in Hybrid Museum Visits</td>
+            <td>1. Explore online-offline mode<br>2. Focus emotion & memory<br>3. Inclusive design support</td>
+            <td>1. Few game designs<br>2. Lack implementation details<br>3. Few real user tests</td>
+        </tr>
+    </table>
+</div>
+
+<h3>Commercial Products</h3>
+<div class="card">
+    <table class="research-table">
+        <tr>
+            <th>Product</th>
+            <th>Strengths</th>
+            <th>Weaknesses</th>
+        </tr>
+        <tr>
+            <td>Palace Museum Official Mini-Program</td>
+            <td>1. Abundant exhibit info<br>2. Stable official platform<br>3. Clear navigation</td>
+            <td>1. Too formal, not playful<br>2. No gamification<br>3. No story recording</td>
+        </tr>
+        <tr>
+            <td>National Museum Guide App</td>
+            <td>1. Complete collection<br>2. Route planning support<br>3. Mature interface</td>
+            <td>1. Content too heavy<br>2. Few interesting interactions<br>3. No private notes</td>
+        </tr>
+        <tr>
+            <td>Daily Palace Museum</td>
+            <td>1. Beautiful visual design<br>2. Daily cultural content<br>3. Relaxed learning</td>
+            <td>1. No on-site games<br>2. Cannot record stories<br>3. Low engagement</td>
+        </tr>
+        <tr>
+            <td>Museum Jigsaw Games</td>
+            <td>1. Simple & fun<br>2. Low learning cost<br>3. Attract young users</td>
+            <td>1. No real museum connection<br>2. Lack knowledge explanation<br>3. No memory function</td>
+        </tr>
+    </table>
 </div>
 
 <h2>Group Members</h2>
@@ -397,17 +497,17 @@
 <h2>Design Iteration & Reflection</h2>
 <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 12px; flex-wrap: wrap;">
     <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #4cb9e7;">
-        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 1: Initial Idea</h3>
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px; border: none;">Stage 1: Initial Idea</h3>
         <p style="margin:0; font-size:14px; line-height:1.6;">Initially planned multiple complex AR and social functions, with complicated interface layout.</p>
     </div>
     <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
     <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #56d9b0;">
-        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 2: Design Shift</h3>
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px; border: none;">Stage 2: Design Shift</h3>
         <p style="margin:0; font-size:14px; line-height:1.6;">Simplify functions, focus on user leisure demand, retain only core jigsaw, turtle soup game and record module.</p>
     </div>
     <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
     <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #e0a86e;">
-        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 3: Final Direction</h3>
+        <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px; border: none;">Stage 3: Final Direction</h3>
         <p style="margin:0; font-size:14px; line-height:1.6;">Fix the two core gameplay: <strong>jigsaw puzzle & turtle soup situation game</strong>, match with relic introduction and private visiting record.</p>
     </div>
 </div>
