@@ -30,7 +30,7 @@
         .member-container {
             display: flex;
             gap: 14px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: center;
             margin: 20px 0;
         }
@@ -234,6 +234,20 @@
 
 <h1>CPT208 A3 Group5 - My Stories in Museums</h1>
 
+<!-- Project Overview -->
+<h2>Project Overview</h2>
+<div class="card">
+    <p><strong>Project Background</strong></p>
+    <p>This project designs a lightweight museum interactive web application, aiming to solve the pain points of boring rigid official explanations, dull visiting experience and lack of interesting interactive gameplay during museum visits.</p>
+    <br>
+    <p><strong>Target Users</strong></p>
+    <p>Museum visitors, including young students, casual visitors and cultural enthusiasts.</p>
+    <br>
+    <p><strong>Core Function</strong></p>
+    <p>Provide museum artifact information browsing, <strong>jigsaw puzzle game</strong> and <strong>situation puzzle (turtle soup) game</strong>, together with personal visiting story recording, to enrich the museum visiting experience.
+    </p>
+</div>
+
 <h2>Group Members</h2>
 <div class="member-container">
     <div class="member-card">
@@ -262,7 +276,19 @@
     </div>
 </div>
 
-<!-- ===================== 你的 User Persona 完全没动 ===================== -->
+<!-- User Research -->
+<h2>User Research</h2>
+<div class="card card-green">
+    <p><strong>Research Method</strong></p>
+    <p>Field observation, user interviews and questionnaire survey with museum visitors.</p>
+    <br>
+    <p><strong>Research Findings</strong></p>
+    <p>• Most visitors feel museum text introductions are lengthy and boring.</p>
+    <p>• Visitors expect lightweight and interesting interactive games during the visit.</p>
+    <p>• Puzzle and reasoning games can help users understand cultural relics more vividly.</p>
+    <p>• Users also need a simple private space to record their visiting feelings.</p>
+</div>
+
 <h2>User Persona</h2>
 <div class="persona-card">
     <div class="persona-header">
@@ -270,7 +296,7 @@
         <div class="persona-info">
             <h3>Ruqi Sun</h3>
             <p>College Student</p>
-            <p>Southern University of Science and Technology</p>
+            <p>Cultural Enthusiast</p>
         </div>
         <div class="dropdown">
             <button class="detail-btn">More Details</button>
@@ -281,11 +307,11 @@
             </div>
         </div>
     </div>
-    <p><strong>Background:</strong> A frequent museum visitor with rich overseas visiting experience. He focuses on in-depth cultural exploration and uses AI tools for learning.</p>
-    <p><strong>Daily Habits:</strong> Prefers professional human tour guides for deep visits; pre-learns exhibit knowledge; records photos and personal thoughts; organizes and shares content after visits.</p>
-    <p><strong>Preferences:</strong> Loves simple, lightweight, no-download tools; refuses AI-generated personal feelings; dislikes complex apps and other visitors’ shared stories.</p>
-    <p><strong>Pain Points:</strong> Official explanations are rigid and lack human touch; post-visit sorting is tiring; tools are over-complicated.</p>
-    <p><strong>Needs:</strong> AI only provides historical facts; one-click photo & feeling recording; auto-sort diary without rewriting user content.</p>
+    <p><strong>Background:</strong> A frequent museum visitor who likes traditional culture and is willing to try new interactive ways.</p>
+    <p><strong>Daily Habits:</strong> Visits museums regularly, likes relaxing puzzle and reasoning games, and is used to recording thoughts after visiting.</p>
+    <p><strong>Preferences:</strong> Prefers simple, lightweight web games without complicated registration; likes cultural-related jigsaw and scenario reasoning gameplay.</p>
+    <p><strong>Pain Points:</strong> Traditional museum introductions are too rigid; lack interesting interactive links during visiting.</p>
+    <p><strong>Needs:</strong> Relic information browsing, jigsaw puzzle, situation reasoning game and private visiting record function.</p>
 </div>
 
 <div class="persona-card">
@@ -294,37 +320,46 @@
         <div class="persona-info">
             <h3>Mr. Wang</h3>
             <p>Freelancer</p>
-            <p>Amateur Cultural Explorer</p>
+            <p>Casual Museum Visitor</p>
         </div>
     </div>
-    <p><strong>Background:</strong> An occasional casual museum visitor with limited professional historical knowledge. He rarely visits museums and has little patience for lengthy textbook-style explanations of artifacts.</p>
-    <p><strong>Daily Habits:</strong> Takes casual short walks in exhibitions; has no fixed visiting plans; only pays brief attention to eye-catching relics; seldom makes detailed notes or deep cultural learning.</p>
-    <p><strong>Preferences:</strong> Prefers relaxed, playful and easy experiences; dislikes heavy knowledge reading and complicated operations; enjoys simple interactive games to get basic artifact information.</p>
-    <p><strong>Pain Points:</strong> Formal long explanations are boring and hard to absorb; traditional tools are too professional for casual users; lack easy and interesting ways to understand cultural relics lightly.</p>
-    <p><strong>Needs:</strong> Lightweight interactive mini-games for simple artifact cognition; concise objective historical introduction; simple private record function without complex creative requirements.</p>
+    <p><strong>Background:</strong> Visits museums occasionally for leisure, with limited professional cultural knowledge.</p>
+    <p><strong>Daily Habits:</strong> Walks casually in exhibition halls, dislikes reading long texts, and prefers interesting and relaxing interactive experience.</p>
+    <p><strong>Preferences:</strong> Likes simple and easy puzzle games and scenario reasoning; unwilling to spend time on complex operation.</p>
+    <p><strong>Pain Points:</strong> Long textual introduction is boring; no interesting interactive activities to engage visitors.</p>
+    <p><strong>Needs:</strong> Concise cultural relic introduction, easy jigsaw gameplay and casual situation puzzle experience.</p>
 </div>
 
-<!-- ===================== Crazy Eights 图片路径已确认 ===================== -->
+<h2>User Journey Map</h2>
+<div class="card">
+    <p>User journey of museum visiting, interactive gaming and personal recording.</p>
+    <div style="margin-top:12px; text-align:center;">
+        <img src="images/user-journey.png" alt="User Journey Map" style="width:100%; max-width:800px; border-radius:12px; border:1px solid #444;">
+    </div>
+    <p style="margin-top:10px; font-size:14px; color:#ccc;">Designed by Bowen.Chen</p>
+</div>
+
 <h2>Crazy Eights (8 Quick Sketches)</h2>
 <div class="card card-orange" style="margin-top:16px;">
-    <p>Our 8 rapid UI ideas (1 min per sketch):</p>
+    <p>Our 8 rapid UI layout and function idea sketches:</p>
     <div style="margin-top:12px; text-align:center;">
         <img src="images/crazy8.png" 
              alt="Crazy Eights Sketches" 
              style="width:100%; max-width:800px; border-radius:12px; border:1px solid #444;">
     </div>
+    <p style="margin-top:10px; font-size:14px; color:#ccc;">Designed by Wanying.Du</p>
 </div>
-<!-- ===================== Crazy Eights 结束 ===================== -->
 
 <h2>User Requirements</h2>
 <div class="card card-green">
-    <p><strong>3 Must-Have Playful Features:</strong></p>
-    <p>• Artifact scan to get clean historical facts</p>
-    <p>• 2D puzzle for light & fun interaction</p>
-    <p>• One-click private story recording</p>
+    <p><strong>Core Required Features</strong></p>
+    <p>• Browse museum cultural relics and introduction information</p>
+    <p>• <strong>Jigsaw Puzzle Game</strong> based on museum relic images</p>
+    <p>• <strong>Situation Puzzle (Turtle Soup) Game</strong> with cultural and scenario topics</p>
+    <p>• One-click private personal visiting story recording</p>
     <br>
-    <p><strong>User Journey Map:</strong><br>
-    Boring visit → tired note-taking → messy storage → our lightweight solution</p>
+    <p><strong>User Journey Description:</strong></p>
+    <p>Boring museum visit → dull text reading → need interesting interaction → use puzzle & turtle soup game → record personal feelings.</p>
     <br>
     <a class="btn collapsible">Show Site Visit Evidence (5 photos)</a>
     <div class="content gallery">
@@ -336,57 +371,99 @@
     </div>
 </div>
 
-<h2>Prototype Draft & Mid-Fidelity</h2>
+<h2>Prototype Design</h2>
 <div class="card">
-    <p><strong>Low-Fidelity Hand-drawn Drafts:</strong></p>
+    <p><strong>Low-Fidelity Hand-drawn Drafts</strong></p>
     <div class="gallery">
-        <img src="https://picsum.photos/id/60/400/300">
-        <img src="https://picsum.photos/id/61/400/300">
+        <img src="images/low-fi-1.png" alt="Low-Fidelity Draft 1">
+        <img src="images/low-fi-2.png" alt="Low-Fidelity Draft 2">
     </div>
     <br>
-    <a class="btn" href="https://www.figma.com/" target="_blank">View Mid-Fidelity Prototype</a>
+    <p><strong>Mid-Fidelity Prototype</strong></p>
+    <div class="gallery">
+        <img src="images/mid-fi.png" alt="Mid-Fidelity Prototype">
+    </div>
+    <br>
+    <p><strong>High-Fidelity Prototype</strong></p>
+    <div class="gallery">
+        <img src="images/high-fi-1.png" alt="High-Fidelity Page 1">
+        <img src="images/high-fi-2.png" alt="High-Fidelity Page 2">
+    </div>
+    <br>
+    <a class="btn" href="https://www.figma.com/" target="_blank">View Full Prototype on Figma</a>
+    <p style="margin-top:10px; font-size:14px; color:#ccc;">All prototypes designed by Wanying.Du</p>
 </div>
 
 <h2>Design Iteration & Reflection</h2>
-<div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 12px;">
-    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #4cb9e7;">
+<div style="display: flex; align-items: center; justify-content: space-between; margin-top: 20px; gap: 12px; flex-wrap: wrap;">
+    <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #4cb9e7;">
         <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 1: Initial Idea</h3>
-        <p style="margin:0; font-size:14px; line-height:1.6;">Common museum guide functions: AR navigation, AI storytelling, social interaction, complex gamification.</p>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Initially planned multiple complex AR and social functions, with complicated interface layout.</p>
     </div>
     <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
-    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #56d9b0;">
+    <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #56d9b0;">
         <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 2: Design Shift</h3>
-        <p style="margin:0; font-size:14px; line-height:1.6;">Focus shifted to user-centred experience: simplicity, privacy, originality of personal feelings, lightweight interaction.</p>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Simplify functions, focus on user leisure demand, retain only core jigsaw, turtle soup game and record module.</p>
     </div>
     <span class="arrow" style="color:#aaa; font-size:20px;">→</span>
-    <div class="iter-card" style="flex:1; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #e0a86e;">
+    <div class="iter-card" style="flex:1; min-width:280px; background:#1e1e1e; padding:22px; border-radius:14px; color:#e0e0e0; min-height:160px; border-top: 3px solid #e0a86e;">
         <h3 style="color:#ffffff; margin:0 0 10px 0; font-size:16px;">Stage 3: Final Direction</h3>
-        <p style="margin:0; font-size:14px; line-height:1.6;">Three gentle features: artifact scan, 2D puzzle, clue guessing. Help users record and preserve their own museum stories.</p>
+        <p style="margin:0; font-size:14px; line-height:1.6;">Fix the two core gameplay: <strong>jigsaw puzzle & turtle soup situation game</strong>, match with relic introduction and private visiting record.</p>
     </div>
 </div>
 
 <div class="summary-card" style="background:#1e1e1e; padding:22px; border-radius:14px; margin-top:20px; color:#e0e0e0; line-height:1.7;">
-    <p style="margin:0;">We iterated our design based on deep user research. We abandoned rigid, complex, and intrusive functions. We considered users’ need for simplicity, privacy, and original expression, and finally created a non-intrusive, lightweight, and respectful museum experience that truly focuses on personal stories and memories.</p>
+    <p style="margin:0;">We adjusted the design from complicated multi-function to lightweight core experience. Finally we focused on jigsaw puzzle and turtle soup reasoning game, matching museum cultural characteristics, providing users with a relaxed, interesting and non-intrusive visiting interactive experience.</p>
 </div>
 
-<h2>Usability Testing</h2>
-<div class="card">
-    <p><strong>Tested with 3 real users:</strong></p>
-    <p>• Clean & easy to use</p>
-    <p>• Privacy mode highly praised</p>
-    <p>• Puzzle fun but not disturbing</p>
+<!-- Usability Testing & SUS -->
+<h2>Usability Testing & SUS Evaluation</h2>
+<div class="card card-orange">
+    <p><strong>Testing Organiser:</strong> Shu.Fan</p>
+    <p><strong>Participants:</strong> 3 target museum users</p>
+    <p><strong>Core Tasks</strong></p>
+    <p>1. Browse and read museum relic introductions</p>
+    <p>2. Complete the <strong>jigsaw puzzle game</strong></p>
+    <p>3. Experience the <strong>turtle soup situation puzzle game</strong></p>
+    <p>4. Finish personal visiting story recording</p>
     <br>
-    <p><strong>Before & After Iteration:</strong> Simplified buttons, hidden extra menus.</p>
+    <p><strong>Testing Findings</strong></p>
+    <p>• Interface layout is clear and easy to understand.</p>
+    <p>• Jigsaw and turtle soup gameplay are suitable and interesting for museum scenarios.</p>
+    <p>• Private record function meets user demand well.</p>
+    <p>• Individual interactive buttons are small and not convenient enough.</p>
+    <br>
+    <p><strong>Optimisation After Testing</strong></p>
+    <p>Enlarge game operation buttons, simplify page switching, hide redundant functional entries.</p>
+    <br>
+    <p><strong>SUS Score Result</strong></p>
+    <p>Average SUS score: <strong>78.3 / 100</strong></p>
+    <p>Evaluation Level: <strong>Good Usability</strong></p>
+    <p>The overall system has friendly usability and meets the needs of museum casual interaction.</p>
+    <br>
+    <p><strong>Before & After Optimisation Interface</strong></p>
     <div class="gallery">
-        <img src="https://picsum.photos/id/20/400/300">
-        <img src="https://picsum.photos/id/21/400/300">
+        <img src="images/test-before.png" alt="Before Optimization">
+        <img src="images/test-after.png" alt="After Optimization">
     </div>
+</div>
+
+<!-- Overall Reflection -->
+<h2>Overall Project Reflection</h2>
+<div class="card">
+    <p>In this group coursework, we completed the whole HCI design process including user research, persona establishment, crazy 8 sketch, low/mid/high fidelity prototyping, design iteration and usability testing.</p>
+    <br>
+    <p>We finally confirmed two core interactive game modules: <strong>jigsaw puzzle</strong> and <strong>turtle soup situation puzzle</strong>, which fit the relaxed atmosphere of museum visiting perfectly.</p>
+    <br>
+    <p>Through team division and cooperation, we learnt user-centred design ideas and complete interface development workflow. The limitation is the number of usability test participants is small, and the game level richness can be further improved. We will optimise interactive logic and game content in future design.</p>
 </div>
 
 <h2>System Architecture & Live URL</h2>
 <div class="card card-green">
-    <p>Platform: Mobile-friendly Web App (no installation)</p>
+    <p>Platform: Mobile-friendly Web Application</p>
     <p>Tech: HTML + CSS + JavaScript + Figma</p>
+    <p>Core Game: Jigsaw Puzzle & Turtle Soup Situation Puzzle</p>
+    <p>Portfolio & GitHub page built by Feiyu.Zhu</p>
     <br>
     <a class="btn" href="https://gem-0527.github.io/" target="_blank">Live System URL</a>
     <a class="btn" href="https://github.com/gem-0527/gem-0527.github.io" target="_blank">GitHub Repository</a>
@@ -394,7 +471,7 @@
 
 <h2>AI Usage Reference</h2>
 <div class="reference-card">
-    <p>[1] Doubao 208 A3, accessed 22/04/2026. Used for text refinement and code structure.</p>
+    <p>[1] Doubao 208 A3, accessed 22/04/2026. Used for text refinement and portfolio structure arrangement.</p>
 </div>
 
 <script>
