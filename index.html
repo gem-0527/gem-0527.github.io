@@ -275,12 +275,28 @@
             color: #e0e0e0;
             text-align: center;
         }
+
+        /* 三张 User Journey Map 竖直排列 无缝 等宽 */
+        .journey-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0;        /* 无缝隙 */
+            width: 100%;
+            align-items: stretch;
+        }
+        .journey-container img {
+            display: block;
+            width: 100%;    /* 宽度完全一样 */
+            height: auto;
+            border-radius: 0;
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
 
 <body>
 
-<!-- 已修改大标题 -->
 <h1>My Stories in Museums</h1>
 
 <!-- Project Overview -->
@@ -297,7 +313,7 @@
     </p>
 </div>
 
-<!-- ======================= Motivation ======================= -->
+<!-- Motivation -->
 <h2>Motivation</h2>
 <div class="card card-green">
     <p>Our group selected topic A3 My Stories in Museums under the theme of Digital Heritage & Play. Traditional museum visits usually rely on rigid text descriptions and monotonous official explanations, which make it difficult for visitors, especially young students and casual tourists, to develop real interests in cultural relics. Meanwhile, most existing museum applications focus too much on information display instead of playful and light interactive experiences, and lack a private space for users to record personal thoughts and visiting stories.</p>
@@ -305,9 +321,8 @@
     <p>Therefore, we design a lightweight web-based interactive system that integrates jigsaw puzzles and situation puzzle games to lower the understanding barrier of cultural heritage. We also provide a one-click visiting story recording function to help users collect their own museum memories. This project follows a user-centered design approach, enhances public engagement with digital heritage, and creates an inclusive, relaxed and interesting visiting experience for diverse visitors.</p>
 </div>
 
-<!-- ======================= Research Summary ======================= -->
+<!-- Research Summary -->
 <h2>Research Summary</h2>
-
 <h3>Academic Papers (4)</h3>
 <div class="card">
     <table class="research-table">
@@ -452,16 +467,14 @@
     <p><strong>Needs:</strong> Concise cultural relic introduction, easy jigsaw gameplay and casual situation puzzle experience.</p>
 </div>
 
+<!-- ====================== 这里已经换成 3 张图 竖直无缝等宽 ====================== -->
 <h2>User Journey Map</h2>
 <div class="card">
     <p>User journey of museum visiting, interactive gaming and personal recording.</p>
-    <div style="margin-top:12px; text-align:center;">
-        
-        <!-- 已替换成你给的 User Journey Map 永久链接 -->
-        <img src="https://github.com/gem-0527/gem-0527.github.io/blob/05c922f4e44f588fcb7b412272d886c3acb1b6d8/images/map.png?raw=true" 
-             alt="User Journey Map" 
-             style="width:100%; max-width:800px; border-radius:12px; border:1px solid #444;">
-        
+    <div class="journey-container" style="margin-top:12px;">
+        <img src="https://github.com/gem-0527/gem-0527.github.io/blob/06bc2474c748222365c9f8a1f9750005a54f5cca/images/map1.png?raw=true" alt="User Journey Map 1">
+        <img src="https://github.com/gem-0527/gem-0527.github.io/blob/06bc2474c748222365c9f8a1f9750005a54f5cca/images/map2.png?raw=true" alt="User Journey Map 2">
+        <img src="https://github.com/gem-0527/gem-0527.github.io/blob/06bc2474c748222365c9f8a1f9750005a54f5cca/images/map3.png?raw=true" alt="User Journey Map 3">
     </div>
     <p style="margin-top:10px; font-size:14px; color:#ccc;">Designed by Bowen.Chen</p>
 </div>
@@ -470,12 +483,9 @@
 <div class="card card-orange" style="margin-top:16px;">
     <p>Our 8 rapid UI layout and function idea sketches:</p>
     <div style="margin-top:12px; text-align:center;">
-        
-        <!-- 已替换成你给的永久链接 -->
         <img src="https://github.com/gem-0527/gem-0527.github.io/blob/7178bf6985246208ba416648a505777a8efb235c/images/crazy8.png?raw=true" 
              alt="Crazy Eights Sketches" 
              style="width:100%; max-width:800px; border-radius:12px; border:1px solid #444;">
-        
     </div>
     <p style="margin-top:10px; font-size:14px; color:#ccc;">Designed by Wanying.Du</p>
 </div>
@@ -588,7 +598,7 @@
     <p>Through team division and cooperation, we learnt user-centred design ideas and complete interface development workflow. The limitation is the number of usability test participants is small, and the game level richness can be further improved. We will optimise interactive logic and game content in future design.</p>
 </div>
 
-<!-- ======================= 好看的表格版 System Architecture ======================= -->
+<!-- System Architecture -->
 <h2>System Architecture</h2>
 <div class="card card-green">
     <table class="arch-table">
