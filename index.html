@@ -25,7 +25,6 @@
             object-fit: cover;
         }
 
-        /* 全局大标题：居中 + 柔和字体 */
         h1, h2, h3 { 
             color: #ffffff; 
             border-bottom: 2px solid #333; 
@@ -42,7 +41,6 @@
             letter-spacing: 1px;
         }
 
-        /* 人物卡片内部小标题 取消居中、恢复左对齐 */
         .persona-info h3 {
             text-align: left;
             border: none;
@@ -105,7 +103,7 @@
             background: #1a2329;
             border-left: 4px solid #4cb9e7;
         }
-        
+
         .persona-avatar {
             width: 80px;
             height: 80px;
@@ -300,7 +298,7 @@
             margin: 0;
             padding: 0;
         }
-        /* 参考文献段落缩进 */
+
         .ref-item {
             padding-left: 1.5em;
             text-indent: -1.5em;
@@ -339,27 +337,27 @@
 <div class="card">
     <table class="research-table">
         <tr>
-            <th>Paper</th>
+            <th>Paper Topic</th>
             <th>Strengths</th>
             <th>Weaknesses</th>
         </tr>
         <tr>
-            <td>Interactive Digital Interpretation in Museums</td>
+            <td>[1] Interactive Digital Interpretation in Museums</td>
             <td>1. Complete digital interaction theory<br>2. Improve visitor engagement<br>3. Mature user-centered model</td>
             <td>1. Lack lightweight game design<br>2. Ignore casual visitors<br>3. Few web-based examples</td>
         </tr>
         <tr>
-            <td>Gamification in Cultural Heritage Education</td>
-            <td>1. Prove gamification effectiveness<br>2. Rich puzzle & task cases<br>3. Focus on accessibility</td>
-            <td>1. No story recording function<br>2. Over-emphasize education<br>3. Lack usability testing</td>
+            <td>[2] Gamification in Cultural Heritage Education</td>
+            <td>1. Systematic review of gamification in heritage education<br>2. Validates game mechanics (points, leaderboards) for engagement<br>3. Addresses diverse audience accessibility</td>
+            <td>1. No story recording function<br>2. Over-emphasize education, lacks casual play<br>3. No usability testing for free visitors</td>
         </tr>
         <tr>
-            <td>Mobile Applications for Museum Visitors</td>
+            <td>[3] Mobile Applications for Museum Visitors</td>
             <td>1. Complete guide function analysis<br>2. Good on-site behavior research<br>3. Clear UI principles</td>
             <td>1. Too informative, not playful<br>2. Lack personalized content<br>3. Rare web app discussion</td>
         </tr>
         <tr>
-            <td>User Experience in Hybrid Museum Visits</td>
+            <td>[4] User Experience in Hybrid Museum Visits</td>
             <td>1. Explore online-offline mode<br>2. Focus emotion & memory<br>3. Inclusive design support</td>
             <td>1. Few game designs<br>2. Lack implementation details<br>3. Few real user tests</td>
         </tr>
@@ -375,22 +373,22 @@
             <th>Weaknesses</th>
         </tr>
         <tr>
-            <td>Palace Museum Official Mini-Program</td>
+            <td>[5] Palace Museum Official Mini-Program</td>
             <td>1. Abundant exhibit info<br>2. Stable official platform<br>3. Clear navigation</td>
             <td>1. Too formal, not playful<br>2. No gamification<br>3. No story recording</td>
         </tr>
         <tr>
-            <td>National Museum Guide App</td>
+            <td>[6] National Museum Guide App</td>
             <td>1. Complete collection<br>2. Route planning support<br>3. Mature interface</td>
             <td>1. Content too heavy<br>2. Few interesting interactions<br>3. No private notes</td>
         </tr>
         <tr>
-            <td>Daily Palace Museum</td>
+            <td>[7] Daily Palace Museum</td>
             <td>1. Beautiful visual design<br>2. Daily cultural content<br>3. Relaxed learning</td>
             <td>1. No on-site games<br>2. Cannot record stories<br>3. Low engagement</td>
         </tr>
         <tr>
-            <td>Museum Jigsaw Games</td>
+            <td>[8] Museum Jigsaw Games</td>
             <td>1. Simple & fun<br>2. Low learning cost<br>3. Attract young users</td>
             <td>1. No real museum connection<br>2. Lack knowledge explanation<br>3. No memory function</td>
         </tr>
@@ -560,6 +558,18 @@
     <p style="margin:0;">We adjusted the design from complicated multi-function to lightweight core experience. Finally we focused on jigsaw puzzle and turtle soup reasoning game, matching museum cultural characteristics, providing users with a relaxed, interesting and non-intrusive visiting interactive experience.</p>
 </div>
 
+<h2>Interview Participants & Iteration Contribution</h2>
+<div class="card card-green">
+    <p><strong>Early Stage User Research & Persona Building (Ruqi Sun + Mr. Wang)</strong></p>
+    <p>Ruqi Sun and Mr. Wang participated in one-on-one semi-structured interviews and signed ethical informed consent forms at the beginning of the project. They provided authentic feedback on real museum visiting experience, feelings about traditional official explanations, willingness to try puzzle games, and demand for personal visiting story recording. Their real demands and pain points directly supported the creation of two user personas, guided our initial feature positioning, and helped the team abandon overly complex functional ideas and lock lightweight gamification direction.</p>
+    <br>
+    <p><strong>Mid-to-Late Stage Usability Testing & Product Iteration (Ruqi Sun + Yongxin Hu + Yuanyuan Peng)</strong></p>
+    <p>Three official interview participants, Ruqi Sun, Yongxin Hu and Yuanyuan Peng, completed full-process usability testing with signed ethical documents. They experienced relic browsing, jigsaw puzzle game, turtle soup situation game and personal record functions step by step. During the test, they pointed out problems such as small interactive buttons, inconvenient page switching and redundant entries. All feedback was recorded, analysed and applied to prototype optimisation and design iteration. Their operation behaviour and subjective evaluation also provided valid data for calculating the SUS score, verifying the overall usability and rationality of the final web application.</p>
+    <br>
+    <p><strong>Iteration Value</strong></p>
+    <p>The whole interview group accompanied the complete design process from early demand exploration, persona modelling, prototype iteration to final usability evaluation. Their real user feedback kept the project adhering to user-centred design, avoided subjective design deviation, and effectively improved the rationality, accessibility and practicality of the museum interactive system.</p>
+</div>
+
 <h2>Usability Testing & SUS Evaluation</h2>
 <div class="card card-orange">
     <div style="display:flex; justify-content:flex-end; align-items:center; gap:8px; margin-bottom:12px;">
@@ -652,6 +662,14 @@
     <p class="ref-item"> [3]Baumgärtner, T. (2019). Conceptualizing a mobile app framework for the museum application domain. <i>Proceedings of the 27th European Conference on Information Systems (ECIS 2019)</i>.</p>
 
     <p class="ref-item"> [4]Løvlie, A. S., Waern, A., Eklund, L., Spence, J., Rajkowska, P., & Benford, S. (2022). <i>Hybrid Museum Experiences: Theory and Design</i>. Amsterdam University Press. https://doi.org/10.5117/9789463726443</p>
+
+    <p class="ref-item"> [5]The Palace Museum. (2025). Palace Museum Official Mini-Program. Available at: https://www.dpm.org.cn/classify_detail/374349.html (Accessed: 10 May 2026).</p>
+
+    <p class="ref-item"> [6]National Museum of China. (2025). National Museum Guide App [Mobile application]. Available at: https://apps.apple.com/mo/app/国家博物馆/id1522431836 (Accessed: 10 May 2026).</p>
+
+    <p class="ref-item"> [7]The Palace Museum. (2025). Daily Palace Museum [Mobile application]. Available at: https://apps.apple.com/gd/app/每日故宫/id943324650 (Accessed: 10 May 2026).</p>
+
+    <p class="ref-item"> [8]Tencent. (n.d.). Museum Jigsaw Games (e.g., National Treasure Jigsaw Puzzle) [Mobile game]. Available at: https://sj.qq.com/ (Accessed: 10 May 2026).</p>
 </div>
 
 <h2>AI Usage Reference</h2>
